@@ -1,0 +1,247 @@
+html, body {
+
+  font-family: Arial;
+  margin: 0; 
+  height: 100%;
+  
+}
+#app-view{
+      
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  
+}
+
+@media (min-width: 1024px) {
+    #app-view {
+      
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+  }
+  
+@media (min-width : 768px) and (max-width: 1023px ) {
+    #app-view {
+        
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+#app-menu{
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  list-style-type: none;
+  background-color: midnightblue;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.menu-item{
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 14px 20px;
+  flex-direction: row;
+  align-items: stretch;
+
+}
+
+.menu-item a {
+
+  text-decoration: none;
+  text-align: center;
+  color: azure;
+  margin: 5px;
+  
+}
+
+
+#page-view{
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+
+/*index.html*/
+
+
+.room-list{
+  
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  
+}
+
+.room-list li{
+  padding: 14px 20px;
+  background-color: lightcyan;
+  border-color: slategray;
+  border-width: 0.5px;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+li > img {
+
+  height: 20px;
+  width: 20px;
+  padding-right: 0px;
+  padding-left: 5px;
+  margin: 5px;
+}
+.room-list li > img {
+  
+  padding-right: 5px;
+  border-radius: 50%;
+}
+.room-list li > a {
+
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  
+}
+.page-control{
+
+  background-color: midnightblue;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.page-control button{
+
+   margin: 6px;
+   padding: 6px; 
+
+}
+
+.page-control input{
+
+  margin: 6px;
+  padding: 2px;
+  
+}
+#app-menu li:hover{
+
+  background-color: rgb(155, 155, 221);
+
+}
+#app-menu li:hover a{
+
+  color:midnightblue;
+}
+.room-list li:hover{
+
+  background-color: rgb(155, 155, 221);
+}
+/*chat.html*/
+
+.room-name{
+
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding: 5px;
+  border-width: 0.2px;
+  border-bottom: slategray;
+  border-style: none none solid none;
+}
+.message-list{
+  flex : 1;
+  margin: 0px 0px 0px 0px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  background-color: lightcyan;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  min-height: 0px; 
+  max-height: 300px;
+}
+
+#chat-page-control{
+
+  justify-content: flex-start;
+}
+
+#chat-text-box{
+
+  flex: 1;
+}
+
+.message {
+  align-self: flex-start;
+  background-color: aliceblue;
+  padding: 14px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border-color: slategray;
+  border-width: 0.1px;
+  border-style: outset;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message.my-message {
+  align-self: flex-end;
+  background-color: dodgerblue;
+  
+}
+.message-user{
+  font-weight: bold;
+}
+
+/*profile.html*/
+.profile-form{
+  flex: 1;
+ 
+}
+.form-field{
+
+  padding: 14px 20px;
+  border-width: 1px;
+  border-bottom: slategray;
+  border-style: none none solid none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+ 
+}
+.form-field label{
+ 
+  width: 100px;
+  
+}
